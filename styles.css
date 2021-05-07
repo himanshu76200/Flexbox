@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+.container {
+    border: 6px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    height: 800px;
+    align-content: center;
+    /* align-content -> we must have multiple row or column */
+    /* align-content -> It helps to align a flex container’s lines within it when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis */
+    /* align-items: baseline; */
+    /* justify-content: space-evenly;  */
+    /* row is default main axes */
+    /* justify-content -> to align items on main axes; */
+    /* align-item -> to align items perpendicular to main axes or cross axes */
+    /* align-items -> baseline : so that the text can sit on a particular baseline */
+    /* flex-wrap: wrap; */ 
+    /* wrap-reverse */
+    /* display: inline-flex; */
+    /* flex-direction: column; column-reverse*/
+}
+
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* all items have order 0 by :default 
+if two elements have same width then element which
+comes first in html file will come first in the 
+container also.
+*/
+
+/* flex-grow -> always related to size of
+other item in a flex container, 0 by default ,
+tells what amount of available space inside 
+an container an item should take, a value
+of 1 ensure all item will take space evenly*/
+
+/* flex-shrink -> relative to other item in container, 
+default value is 1 
+setting flex-shrink to 0 prevent shrink to happen
+flex-shrink to 4 means that the item will shrink 4 times as much as other items
+dictates the shrink factor when the default size of the flex
+items is larger than the flex container
+*/
+
+/* 
+flex-grow and flex-shrink are applied over flex-basis
+default value is auto and it can accept number also like 200px, 400px etc
+if the flex-grow is 1 and flex-basis is 200px and there is remaining space in 
+the container then 200px will become 200 + remaining width
+flex-basis -> set the initail size of a flex-item in pixel, percent or relative units
+default value is auto
+*/
+
+/* 
+flex -> flex-grow flex-shrink flex-basis
+defafult -> 0 1 auto
+*/
+
+/* 
+align-self -> default is auto (which means that it must be computed or inherited from align items 
+from the parent flex container)
+default align item is set to strech
+align-self writes over align-items
+align items indivisually
+flex-start flex-end center and stretch auto
+*/
+
+.item-1 {
+    background-color: #B4BF35;
+    /* padding: 3rem; */
+}
+.item-2 {
+    background-color: #B95F21;
+    /* padding: 5rem; */
+}
+.item-3 {
+    background-color: #1C4C56;
+    /* font-size: 4rem; */
+}
+.item-4 {
+    background-color: #CfB276;
+}
+.item-5 {
+    background-color: #6B0803;
+}
+.item-6 {
+    background-color: #1C4C56;
+}
+.item-7 {
+    background-color: #B95F21;
+}
+.item-8 {
+    background-color: #01243A;
+}
+.item-9 {
+    background-color: #AAD041;
+}
