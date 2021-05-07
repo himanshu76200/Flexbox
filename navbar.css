@@ -1,0 +1,45 @@
+body {
+    margin: 0%;
+}
+
+nav {
+    font-size: 2rem;
+    background-color: #f1f1f1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media all and (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+    }
+    /* nav ul li {
+        text-align: center;
+    } */
+}
+
+/* auto. The item is sized according to its
+ width and height properties, but grows to
+  absorb any extra free space in the flex 
+  container, and shrinks to its minimum 
+  size to fit the container. This is equivalent
+   to setting " flex: 1 1 auto ". none. The item
+    is sized according to its width and height properties */
